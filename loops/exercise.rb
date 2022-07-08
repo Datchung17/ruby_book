@@ -1,4 +1,4 @@
-# #1
+# # #1
 [1,2,3,4,5]
 
 # #2
@@ -10,10 +10,14 @@ while x != "STOP".to_i
 	puts number * 2
 	puts "enter another number or type 'STOP'"
 	x = gets.chomp.to_i
-	puts x * 2
+	if x == "STOP".to_i
+		next
+	else
+		puts x * 2
+	end
 end
 
-#3
+# #3
 def count_down(number)
 	if number <= 0
 		puts number
